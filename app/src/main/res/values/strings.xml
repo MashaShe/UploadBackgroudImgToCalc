@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">UploadBackgroudImgToCalc</string>
+    <string name="engButttonText">Set</string>
+    <string name="buttonUsualText">Set</string>
+    <string name="buttonSRText">кв. корень</string>
+    <string name="buttonDegreeText">Степ.</string>
+    <string name="buttonTenDegreeText">10 в степ.</string>
+    <string name="buttonLogText">log</string>
+    <string name="buttonInText">In</string>
+    <string name="button2DegreeText">кв. степ.</string>
+    <string name="buttonExpText">exp</string>
+    <string name="buttonModText">mod</string>
+    <string name="ok">OK</string>
+    <string name="img_name">Введите имя картинки</string>
+    <string name="common_text">Для смены фона, пожалуйста, укажите имя картинки. Если хотите удалить картинку, оставьте поле пустым</string>
+</resources>
