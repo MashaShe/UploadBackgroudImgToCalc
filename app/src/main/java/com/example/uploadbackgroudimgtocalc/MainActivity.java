@@ -86,22 +86,13 @@ public class MainActivity extends AppCompatActivity {
 
                     File filelog = new File(getExternalFilesDir(null),
                             "log.txt");
-                    FileWriter writer = null;
-                    FileReader reader = null;
-                    try {
-                        writer = new FileWriter(filelog, true);
-                        writer.write("app started");
-                        reader = new FileReader(filelog);
 
+                    try (FileWriter writer = new FileWriter(filelog, true);
+                         FileReader reader = new FileReader(filelog)){
+                        writer.write("app started");
+                      
                     } catch (IOException e) {
                         e.printStackTrace();
-                    } finally {
-                        try {
-                            writer.close();
-                            reader.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
                     }
 
                     calcLayout.setVisibility(View.VISIBLE);
